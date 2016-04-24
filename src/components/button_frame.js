@@ -75,10 +75,13 @@ class ButtonFrame extends Component {
 
 
 		return(
-			<div id="button-frame" className="col-xs-2 well">
+			<div id="button-frame" className="col-xs-1 container">
 					{button}
-					<button className="btn btn-warning btn-xs" onClick={this.redrawClickHandler.bind(this)}>
-						<i className="fa fa-refresh"> 5 </i>
+					<button
+					  className="btn btn-warning btn-xs"
+					  disabled={this.props.redraws <= 0 ? ' disabled' : ''}
+					  onClick={this.redrawClickHandler.bind(this)} >
+						<i className="fa fa-refresh"> {this.props.redraws} </i>
 					</button>
 			</div>
 		)

@@ -1,4 +1,6 @@
-export {default as ChoiceBox} from './choice_box'
-export {default as CountFrame} from './count_Frame'
 export {default as AnswerFrame} from './answer_Frame'
 export {default as ButtonFrame} from './button_Frame'
+export {default as ChoiceBox} from './choice_box'
+export {default as CountFrame} from './count_Frame'
+export {default as DoneFrame} from './done_Frame'
+export {default as HowToPlay} from './how_to_play'

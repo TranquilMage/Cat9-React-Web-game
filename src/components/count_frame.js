@@ -14,7 +14,7 @@ class CountFrame extends Component {
 		var listIcons = (icons) => {
 			var list = [];
 			for (var i = 0; i < icons; i++) {
-				list.push(<i key={i}className="fa fa-user"></i>)
+				list.push(<i key={i}className="fa fa-gitlab"></i>)
 			};
 			return list
 		}

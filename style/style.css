@@ -4,12 +4,13 @@
 
 }
 
+#button-frame button{ display: block;}
 #button-frame .btn-xlg{
-	margin: 117px 0 0 0; 
+	margin: 80px 0 0 0;
 }
 
 .card-panel	{
-	min-height: 300px;
+	min-height: 200px;
 }
 
 .card-panel	h5{
@@ -18,7 +19,19 @@
 
 a.disabled.green {
     pointer-events: none;
+	cursor: not-allowed;
 }
 a.disabled {
 	cursor: not-allowed;
+}
+.modal .bottom-sheet {
+	max-height: 50%;
+}
+.modal-content p{
+	font-size: 1rem;
+}
+
+.bottom-sheet .modal-footer {
+	margin: 0;
+	padding: 0;
 }

@@ -51,6 +51,8 @@ class ChoiceBox extends Component {
 
 		return (
 			<div className="card-panel col-xs-12">
+				<h5 className="col-title">Choices</h5>
+				<hr />
 				{numberItems}
 			</div>
 		)
