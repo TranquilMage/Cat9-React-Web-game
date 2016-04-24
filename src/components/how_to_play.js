@@ -24,7 +24,9 @@ const HowToPlay = ({redraws}) => {
 	 		<div id="modal1" className="modal bottom-sheet">
 
 	            <div className="modal-content">
+		                <a href="#!" data-dismiss="modal1"  style ={{'float' : 'right'}} className="btn btn-danger btn-xs modal-action modal-close">Close</a>
 	                <h4 className="text-center">How To Play CAT9</h4>
+
 	                <div className="container-fluid">
 	                    <ul className="collection">
 	                        <li className="collection-item avatar">
@@ -40,6 +42,12 @@ const HowToPlay = ({redraws}) => {
 	                            <i className="material-icons circle fa fa-check green"></i>
 	                            <span className="title">Saving Answers</span>
 	                            <p>Click the {goodButton} again to save your Answers
+	                            </p>
+	                        </li>
+	                        <li className="collection-item avatar">
+	                            <i className="material-icons circle purple"> 1-9 </i>
+	                            <span className="title">Changing Answers</span>
+	                            <p>Click the numbers in the Answers panel to remove your choice(s) and try again
 	                            </p>
 	                        </li>
 	                        <li className="collection-item avatar">

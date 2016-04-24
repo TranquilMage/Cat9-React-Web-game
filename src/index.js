@@ -153,7 +153,7 @@ class App extends Component {
     		<section className="no-margin">
                 <div className="row">
                     <div className="view overlay hm-blue-slight z-depth-2">
-                        <a><img style={{ width: '100%' }}src="/imgs/cat9.png" className="img-responsive" />
+                        <a><img style={{ width: '100%' }}src="./imgs/cat9.png" className="img-responsive" />
                             <div className="mask waves-effect waves-light"></div>
                         </a>
                     </div>

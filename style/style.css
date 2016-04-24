@@ -4,9 +4,12 @@
 
 }
 
-#button-frame button{ display: block;}
+#button-frame button{ 
+	display: block;
+	margin: 0 auto;
+}
 #button-frame .btn-lg{
-	margin: 80px 0 0 0;
+	margin-top: 80px;
 }
 
 .card-panel	{

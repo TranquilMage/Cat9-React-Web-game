@@ -11,7 +11,7 @@ class AnswerFrame extends Component {
 
 	render(){
 		return(
-			<div className="col-xs-6 card-panel text-center answer-frame">
+			<div className="col-xs-5 card-panel text-center answer-frame">
 				<h5 className="col-title">Answer</h5>
 				<hr />
 				{this.props.selectedNumbers.map((i) => {

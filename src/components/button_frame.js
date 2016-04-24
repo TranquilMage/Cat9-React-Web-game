@@ -75,7 +75,7 @@ class ButtonFrame extends Component {
 
 
 		return(
-			<div id="button-frame" className="col-xs-1 container">
+			<div id="button-frame" className="col-xs-2 container">
 					{button}
 					<button
 					  className="btn btn-warning btn-xs"
