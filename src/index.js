@@ -149,25 +149,39 @@ class App extends Component {
 				reset={this.reset}/>
 		}
     return (
-    	<div>
-	        <button type="button" className="waves-effect waves-light btn btn-default btn-sm modal-trigger" href="#modal1">How to Play</button>
-	    	<div className="row">
-	    		<CountFrame
-	    		  countInBox={this.state.countInBox}/>
-	    		<ButtonFrame
-	    		  selectedNumbers={this.state.selectedNumbers}
-	    		  correct={this.state.correct}
-	    		  acceptAnswer={acceptAnswer}
-	    		  redraw={redraw}
-	    		  redraws={this.state.redraws}
-	    		  checkAnswer={checkAnswer}/>
-	    		<AnswerFrame
-	    		  selectedNumbers={this.state.selectedNumbers}
-	    		  unclickNumber={unclickNumber}/>
-	    	</div>
-	    	{this.bottomFrame}
+    	<div className="container-fluid">
+    		<section className="no-margin">
+                <div className="row">
+                    <div className="view overlay hm-blue-slight z-depth-2">
+                        <a><img style={{ width: '100%' }}src="/imgs/cat9.png" className="img-responsive" />
+                            <div className="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+	        			<button type="button" className="waves-effect waves-light btn btn-default btn-sm modal-trigger" href="#modal1">How to Play</button>
+	        			<button type="button" className="waves-effect waves-light btn btn-primary btn-sm modal-trigger" href="https://github.com/TranquilMage/Cat9-React-Web-game">View Code</button>
+	        			<button type="button" className="waves-effect waves-light btn btn-danger btn-sm modal-trigger" href="http://www.obstolumtriggs.com/">About Me</button>
 
-        <HowToPlay redraws={this.state.redraws}/>
+                </div>
+            </section>
+            <div className="card-panel">
+		    	<div className="row">
+		    		<CountFrame
+		    		  countInBox={this.state.countInBox}/>
+		    		<ButtonFrame
+		    		  selectedNumbers={this.state.selectedNumbers}
+		    		  correct={this.state.correct}
+		    		  acceptAnswer={acceptAnswer}
+		    		  redraw={redraw}
+		    		  redraws={this.state.redraws}
+		    		  checkAnswer={checkAnswer}/>
+		    		<AnswerFrame
+		    		  selectedNumbers={this.state.selectedNumbers}
+		    		  unclickNumber={unclickNumber}/>
+		    	</div>
+		    	{this.bottomFrame}
+
+	        	<HowToPlay redraws={this.state.redraws}/>
+    		</div>
     	</div>
     )
   }

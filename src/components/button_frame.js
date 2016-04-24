@@ -26,27 +26,27 @@ class ButtonFrame extends Component {
 		// 	case true:
 		// 		console.log(true);
 		// 		button = (
-		// 			<button className="btn btn-success btn-xlg">
+		// 			<button className="btn btn-success btn-lg">
 		// 				<i className="fa fa-check"></i>
 		// 			</button>
 		// 		);
 		// 	case false:
 		// 		console.log(false);
 		// 		button = (
-		// 			<button className="btn btn-danger btn-xlg">
+		// 			<button className="btn btn-danger btn-lg">
 		// 				<i className="fa fa-times"></i>
 		// 			</button>
 		// 		)
 		// 	default:
 		// 		disabled = (this.props.selectedNumbers.length === 0)
 		// 		button = (
-		// 			<button className="btn btn-primary btn-xlg" disabled={disabled}
+		// 			<button className="btn btn-primary btn-lg" disabled={disabled}
 		// 				onClick={this.onClickHandler.bind(this)}>=</button>
 		// 		)
 		// }
 		if(correct && correct !== null){
 			buttonClass ="btn-success";
-			classes =`btn ${buttonClass} btn-xlg`
+			classes =`btn ${buttonClass} btn-lg`
 			icon = (<i className="fa fa-check"></i>)
 
 			button = (
@@ -56,7 +56,7 @@ class ButtonFrame extends Component {
 
 		}else if(correct === false){
 			buttonClass ="btn-danger";
-			classes =`btn ${buttonClass} btn-xlg`
+			classes =`btn ${buttonClass} btn-lg`
 			icon = (<i className="fa fa-times"></i>)
 				button = (
 					<button className={classes} disabled={disabled}
@@ -64,7 +64,7 @@ class ButtonFrame extends Component {
 				);
 		}else if(correct === null){
 			buttonClass ="btn-primary";
-			classes =`btn ${buttonClass} btn-xlg`
+			classes =`btn ${buttonClass} btn-lg`
 			icon = (<i>=</i>)
 			button = (
 				<button className={classes} disabled={disabled}
